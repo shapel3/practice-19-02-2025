@@ -3,6 +3,7 @@
 }
 body {
   margin: 0;
+  background-image: url(./assets/images/Light_background_deepslate.png);
   font-family: rubik, helvetica, arial, sans-serif;
   font-size: 14px;
 }

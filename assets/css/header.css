@@ -1,35 +1,70 @@
-.main-header{
-    height: 300px;
-    background-color: rgb(103, 164, 210);
-    background-image: url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/42/Light_background_grass.png/revision/latest?format=original), linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(73,106,208,1) 47%, rgba(154,230,246,1) 100%);;
-    background-repeat: repeat-x, no-repeat;
-    background-position: 0 120px, 0 0;
+.main-header {
+  height: 300px;
+  background-color: rgb(103, 164, 210);
+  background-image: url(../images/Light_background_grass.png),
+    linear-gradient(
+      0deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(73, 106, 208, 1) 47%,
+      rgba(154, 230, 246, 1) 100%
+    );
+  background-repeat: repeat-x, no-repeat;
+  background-position: 0 120px, 0 0;
 }
 
-main{
-    margin-top: -140px;
+main {
+  margin-top: -140px;
 }
 
-.main-wrapper{
-    min-width: 720px;
-    width: 45%;
-    margin: auto;
+.main-wrapper {
+  min-width: 720px;
+  width: 45%;
+  margin: auto;
 }
 
-.main-menu{
-    list-style: none;
-    margin: 0;
+.main-menu {
+  list-style: none;
+  margin: 0;
 }
 
-.main-menu-item{
-    display: inline-block;
-    margin: 0 1.5px;
+.main-menu-item {
+  display: inline-block;
+  margin: 0 1.2em;
+  position: relative;
 }
 .main-menu-item>a{
-    color: black;
-    text-transform: uppercase;
-    font-weight: bolder;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 .main-menu-item>a:hover{
-    text-decoration: underline;
+  text-decoration: underline;
+}
+.main-menu-item:hover>.submenu{
+  display: block;
+}
+
+.submenu{
+  display: none;
+  width: 210%;
+  position: absolute;
+  left: -50%;
+  list-style: none;
+  padding: 7px;
+  background-color: white;
+}
+.main-menu-item {
+    display: inline-block;
+    position: relative;
+}
+.submenu-link{
+  display: block;
+  list-style: none;
+  padding: 5px 9px;
+  text-transform: capitalize;
+  color: black;
+}
+.submenu-link:hover{
+  background-color: rgb(232, 233, 231);
+  color: rgb(0, 84, 168);
 }
