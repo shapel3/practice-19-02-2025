@@ -1,15 +1,16 @@
 .main-header {
   height: 300px;
   background-color: rgb(103, 164, 210);
-  background-image: url(../images/Light_background_grass.png),
+  background-image:url(../images/Light_background_deepslate_transition.png),url(../images/Light_background_grass.png),
     linear-gradient(
       0deg,
       rgba(2, 0, 36, 1) 0%,
       rgba(73, 106, 208, 1) 47%,
       rgba(154, 230, 246, 1) 100%
     );
-  background-repeat: repeat-x, no-repeat;
-  background-position: 0 120px, 0 0;
+  background-repeat: repeat-x, repeat-x, no-repeat;
+  background-position: bottom left, 0 120px, 0 0;
+  padding-top: 100px;
 }
 
 main {
@@ -53,6 +54,24 @@ main {
   padding: 7px;
   background-color: white;
 }
+.left0{
+    left: 0;
+}
+.left-10{
+    left: -10;
+}
+.left-90{
+    left: -90;
+}
+
+.submenu-item{
+    position: relative;
+}
+.submenu-item:hover>.submenu{
+    display: block;
+    left: 100%;
+    top: 0;
+}
 .main-menu-item {
     display: inline-block;
     position: relative;
@@ -64,6 +83,7 @@ main {
   text-transform: capitalize;
   color: black;
 }
+
 .submenu-link:hover{
   background-color: rgb(232, 233, 231);
   color: rgb(0, 84, 168);
