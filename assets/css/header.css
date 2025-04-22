@@ -26,12 +26,32 @@ main {
 .main-menu {
   list-style: none;
   margin: 0;
+  font-size: 12px;
 }
 
 .main-menu-item {
   display: inline-block;
   margin: 0 1.2em;
+  padding-bottom: 30px;
   position: relative;
+}
+.main-menu-item::after{
+  content: '\23F7';
+}
+.main-menu-item:hover::after{
+  content: '\23F6';
+}
+
+.main-menu-item > .submenu::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color:transparent transparent whitesmoke transparent;
+  top: -18px;
+   left: 42%;
 }
 .main-menu-item>a{
   color: black;
@@ -47,12 +67,16 @@ main {
 
 .submenu{
   display: none;
-  width: 210%;
+  width: 100%;
+  min-width: 150px;
+  max-width: 200px;
   position: absolute;
+  top: 30px;
   left: -50%;
   list-style: none;
   padding: 7px;
   background-color: white;
+  font-size: 14px;
 }
 .left0{
     left: 0;
@@ -66,6 +90,12 @@ main {
 
 .submenu-item{
     position: relative;
+}
+.submenu-item:has(>.submenu)::after{
+  content: '\1433';
+  position: absolute;
+  top: 5px;
+  right: 0;
 }
 .submenu-item:hover>.submenu{
     display: block;
@@ -87,4 +117,17 @@ main {
 .submenu-link:hover{
   background-color: rgb(232, 233, 231);
   color: rgb(0, 84, 168);
+}
+
+.explore::before{
+  content: url(./../icons/book-open-blank-variant\ \(1\).svg);
+  display: inline-block;
+  width: 14px;
+  transform: translate(-3px ,2px);
+}
+.home::before{
+  content: url(./../icons/home-outline.svg);
+  display: inline-block;
+  width: 16px;
+  transform: translate(-3px ,3px);
 }
