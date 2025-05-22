@@ -10,9 +10,40 @@
     );
   background-repeat: repeat-x, repeat-x, no-repeat;
   background-position: bottom left, 0 120px, 0 0;
-  padding-top: 100px;
+  padding-top: 30px;
 }
-
+.link-wrapper{
+  text-align: right;
+}
+.sign-in,
+.register{
+  display: inline-block;
+  margin-bottom: 30px;
+  height: 34px;
+  padding: 7px 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.sign-in{
+  border: 1px solid #000;
+}
+.register{
+  background-color: rgb(0, 84, 168);
+  border: 1ps solid rgb(0, 84, 168);
+  color: white;
+  position: relative;
+  padding-left: 45px;
+}
+.register::before{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(./../icons/account-circle-outline.svg);
+  position: absolute;
+  left: 18px;
+  top: 5px;
+}
 main {
   margin-top: -140px;
 }

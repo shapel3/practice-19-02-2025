@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="./../Site-favicon.ico" type="image/x-icon" />
+    <title>Register - Minecraft wiki</title>
+    <script src="https://kit.fontawesome.com/78f6e8ae05.js"
+     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./../assets/register.css">
+</head>
+<body>
+    <div class="out-wrapper">
+    <a href="./../index.html">back</a>
+    <section class="wrapper">
+        <header class="header">
+            <h1>Join FANDOM Todat</h1>
+            <p> <a href="https://auth.fandom.com/signin?source=register&metadata=&redirect=https%3A%2F%2Fauth.fandom.com%2Fauth%2Fredirect%3Fredirect%3Dhttps%25253A%25252F%25252Fminecraft.fandom.com%25252Fwiki%25252FHardcore%26metadata%3D%26redirected_from%3Dregister%26source%3Dsignin">Alrady have an account? Sign in</a></p>
+        </header>
+        <div class="flex-container">
+            <div class="social">
+                <h2>Connect a Social Account</h2>
+                <ul>
+                    <li><a href="" class="btn fb"><i class="fa-brands fa-facebook" style="color: #000242;"></i>connect with Facebook</a></li>
+                    <li><a href=""  class="btn google"><i class="fa-brands fa-google"></i>connect with Google</a></li>
+                    <li><a href="" class="btn twitch"><i class="fa-brands fa-twitch"></i>connect with Twitch</a></li>
+                    <li><a href="" class="btn apple"><i class="fa-brands fa-apple"></i>connect with Apple</a></li>
+                </ul>
+            </div>
+            <form  class="register">
+                <h2>Register with Email</h2>
+                <label>
+                    <input name="email" 
+                    type="email"
+                    placeholder="Email" required>
+                </label>
+                <label>
+                    <input name="username" 
+                    type="text"
+                    placeholder="Username"required>
+                </label>
+                <label>
+                    <input name="password" 
+                    type="Password"
+                    placeholder="password" required >
+                </label>
+                <label>
+                    <input name="date" 
+                    type="date">
+                </label>
+                <label>
+                    <input name="subscribe" 
+                    type="checkbox" checked value="subscribe">
+                    <span>Email me about FANDOM news and events</span>
+                </label>
+                <label>
+                    <input name="subscribe" 
+                    type="checkbox" required>
+                    <span>I agree to:</span>
+                </label>
+                <ul>
+                    <li><a href="https://www.fandom.com/terms-of-use">FANDOM's Terns of Use</a></li>
+                    <li><a href="https://www.fandom.com/privacy-policy">Privacy Policy</a></li>
+                </ul>
+                <input type="submit" value="REGISTER" disabled>
+            </form>
+        </div>
+    </section>
+    </div>
+</body>
+</html>

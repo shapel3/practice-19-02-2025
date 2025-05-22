@@ -1,0 +1,143 @@
+/* *{
+    box-sizing: border-box;
+} */
+body {
+  margin: 0;
+}
+a {
+  color: inherit;
+}
+h2 {
+  font-size: 1.1em;
+}
+.out-wrapper {
+  min-height: 100vh;
+  background-color: antiquewhite;
+  font-family: sans-serif;
+}
+.wrapper {
+  min-width: 720px;
+  width: 45%;
+  margin: auto;
+  background-color: white;
+}
+.header {
+  background-color: rgb(36, 0, 62);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.social,
+.register {
+  width: 40%;
+  padding: 20px 0;
+}
+.register {
+  display: flex;
+  flex-direction: column;
+}
+.register > * {
+  margin-bottom: 15px;
+}
+.register > label > input:not(input[type="checkbox"]) {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 1.1em;
+  padding-bottom: 7px;
+}
+.register > label > input:not(input[type="checkbox"]):hover {
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+.register > label > input:not(input[type="checkbox"]):focus {
+  outline: none;
+  border-bottom: 1px solid #280033;
+}
+.register > label > input[type="date"] {
+  color: aaa;
+  font-family: inherit;
+}
+.register > label > input::placeholder {
+  color: aaa;
+}
+.register > input[type="submit"] {
+  background-color: #280033;
+  color: white;
+  padding: 15px 0;
+  border: none;
+  font-weight: 900;
+}
+.register > input[type="submit"]:hover {
+  background-color: magenta;
+}
+.register > label > input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  margin-left: 15px;
+}
+.register > label > input[type="checkbox"]::before {
+  content: "";
+  line-height: 0.9em;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  transform: translateX(-13px) translateY(1px);
+}
+.register > label > input[type="checkbox"]:checked::before {
+  content: "\2713";
+}
+.social > ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.btn {
+  display: block;
+  background-color: #280033;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  position: relative;
+}
+.fb {
+  background-color: #1872f1;
+}
+.google {
+  background-color: #4285f4;
+}
+.twitch {
+  background-color: #9146ff;
+}
+.apple {
+  background-color: #000;
+}
+.btn > i {
+  background-color: white;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border-radius: 3px;
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  line-height: 25px;
+}
+.google > i {
+  color: #4285f4;
+}
+.twitch > i {
+  color: #9146ff;
+}
+.apple > i {
+  color: #000;
+}
