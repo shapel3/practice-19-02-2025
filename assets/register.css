@@ -16,8 +16,8 @@ h2 {
   font-family: sans-serif;
 }
 .wrapper {
-  min-width: 720px;
-  width: 45%;
+  min-width: 576px;
+  width: 55%;
   margin: auto;
   background-color: white;
 }
@@ -140,4 +140,32 @@ h2 {
 }
 .apple > i {
   color: #000;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .wrapper{
+    width: 70%;
+    /* background-color: pink; */
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper{
+    width: 88%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper{
+    width: 96%;
+  }
+  .flex-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .social,
+.register {
+  width: 90%;
+}
 }
